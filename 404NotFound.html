@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+    <head>
+        <title>找不到网页</title>
+        <style>
+            body {background-color:pink;}
+            p {color:black;}
+            a {color:blue;}
+        </style>
+    </head>
+    <body>
+        <div id="body">
+            <h1>你说的网页我已经找不到了<br>可能是:<br>1.被网站主删除<br>2.你网页输错了<br>3.网站主刻意引导你进入该网页,为了说明该网站已经不存在</h1>
+            <form>
+                <label for="proposal_text">反馈建议:</label><input type="text" id="proposal_text">
+            </form>
+            <button type="button" id="proposal" onclick="pro()">反馈建议</button>
+            <button type="button" id="play" onclick="play()">无聊了? -> 玩会游戏!</button>
+            <script>
+                function pro() {
+                    alert("反馈成功!")
+                }
+                function play() {
+                    window.location.href="button_game.html"
+                }
+            </script>
+            <noscript>抱歉，你的浏览器不支持 JavaScript!</noscript>
+        </div>
+    </body>
+</html>
